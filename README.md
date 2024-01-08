@@ -1,4 +1,5 @@
-# reagent-test-program front-end 荧光分析仪软件front-end
+# reagent-test-program front-end 
+# 荧光分析仪软件front-end
 荧光分析仪软件前端界面部分代码
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -46,3 +47,13 @@ git
 ## 作者
 mysondrink@163.com
 github.com/mysondrink
+
+[your-project-path]:mysondrink/qt0108
+[contributors-shield]: https://img.shields.io/github/contributors/mysondrink/qt0108.svg?style=flat-square
+[contributors-url]: https://github.com/mysondrink/qt0108/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mysondrink/qt0108.svg?style=flat-square
+[forks-url]: https://github.com/mysondrink/qt0108/network/members
+[stars-shield]: https://img.shields.io/github/stars/mysondrink/qt0108.svg?style=flat-square
+[stars-url]: https://github.com/mysondrink/qt0108/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mysondrink/qt0108.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/mysondrink/qt0108.svg
