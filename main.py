@@ -1,12 +1,11 @@
 """
-@Description：
-@Author：mysondrink@163.com\n
-@Time：${DATE} ${TIME}\n
+@Description：主程序入口文件
+@Author：mysondrink@163.com
+@Time：2024/1/8 15:11
 """
 import sys
-from PySide2.QtGui import *
-from PySide2.QtCore import *
-from PySide2.QtWidgets import *
+from view.LoadPage import LoadPage
+from PySide2.QtWidgets import QApplication
 
 
 def main() -> None:
@@ -16,7 +15,7 @@ def main() -> None:
         null
     """
     app = QApplication()
-    w = QWidget()
+    w = LoadPage()
     w.show()
     sys.exit(app.exec_())
 
