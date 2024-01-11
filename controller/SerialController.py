@@ -15,14 +15,10 @@ SUCCEED_CODE = 202
 
 
 class CheckSerialThread(AbstractThread):
-    update_json = Signal(dict)
-
-    def __init__(self) -> object:
+    def __init__(self):
         """
         构造函数
         初始化线程，调用父类方法进行日志记录
-        Returns:
-            object
         """
         super().__init__()
 
@@ -51,3 +47,5 @@ class CheckSerialThread(AbstractThread):
             code_msg = FAILED_CODE
             status_msg = 1
             self.update_json.emit(dict(info=info_msg, code=code_msg, status=status_msg))
+        finally:
+            self.log_thread.deleteLater()

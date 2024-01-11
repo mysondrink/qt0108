@@ -12,18 +12,32 @@ from controller.LogController import LogThread
 
 class AbstractThread(QThread):
     update_log = Signal(str)
+    update_json = Signal(dict)
 
-    def __init__(self) -> object:
+    def __init__(self):
         """
         构造函数，初始化日志类
-        Returns:
-            object
         """
         super().__init__()
         self.log_thread = LogThread()
         self.log_thread.start()
         self.update_log.connect(self.log_thread.getLogMsg)
         sys.excepthook = self.HandleException
+
+    def __del__(self):
+        """
+        析构函数，打印类名
+        """
+        print(f"delete thread {self.__class__.__name__}")
+
+    def deleteLater(self) -> None:
+        """
+        打印删除的类的名
+        Returns:
+            None
+        """
+        super().deleteLater()
+        print(f"delete thread {self.__class__.__name__}")
 
     def HandleException(self, excType, excValue, tb) -> None:
         """
@@ -51,5 +65,4 @@ class AbstractThread(QThread):
         """
         exc_type, exc_value, exc_traceback = sys.exc_info()
         err_msg = ''.join(traceback.format_exception(exc_type, exc_value, exc_traceback))
-        print("sendexception")
         self.update_log.emit(err_msg)

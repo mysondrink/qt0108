@@ -48,9 +48,13 @@ class LogThread(QThread):
             # 定义handler的输出格式（时间，文件，行数，错误级别，错误提示）
             formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
             fh.setFormatter(formatter)
-
-            # 将logger添加到handler里面
-            self.logger.addHandler(fh)
+            """
+            如果没有移除上一次的FileHandler对象，第二次logger对象就会再次获得相同的FileHandler对象
+            通过判断logger对象的handlers属性，或者hasHandlers函数，保持同一loggername对应的FileHander唯一
+            """
+            if not self.logger.handlers:
+                # 将logger添加到handler里面
+                self.logger.addHandler(fh)
 
             # 日志级别
             #
@@ -74,5 +78,4 @@ class LogThread(QThread):
         Returns:
             None
         """
-        print("getlogmsg")
-        self.logger.info(msg)
+        self.logger.error(msg)

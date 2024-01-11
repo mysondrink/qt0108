@@ -1,0 +1,274 @@
+2024-01-11 15:29:55,721 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:30:02,426 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-11 15:30:11,642 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:30:16,129 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-11 15:32:59,815 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:33:04,844 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-11 15:36:25,736 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:36:29,029 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 15:36:42,191 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:37:21,839 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:37:23,988 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 15:37:37,360 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:50:10,847 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:50:20,344 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 15:50:49,711 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:51:55,886 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 15:53:14,365 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:17,252 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:19,844 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:20,221 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:20,397 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:20,573 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:20,974 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:21,133 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:21,294 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:21,661 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:23,525 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:23,749 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'homePage'
+
+2024-01-11 15:53:24,999 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 16:16:30,669 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 31, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 51, in InitUI
+    self.controller.update_json.connect(self.getInfo())
+TypeError: getInfo() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:17:04,386 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 265, in on_loginBtn_clicked
+    self.update_json.connect(self.controller)
+TypeError: 'PySide2.QtCore.QObject.connect' called with wrong argument types:
+  PySide2.QtCore.QObject.connect(LoginPage, str, LoginController)
+Supported signatures:
+  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, typing.Callable, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+  PySide2.QtCore.QObject.connect(bytes, typing.Callable, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+  PySide2.QtCore.QObject.connect(bytes, PySide2.QtCore.QObject, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, PySide2.QtCore.QMetaMethod, PySide2.QtCore.QObject, PySide2.QtCore.QMetaMethod, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, PySide2.QtCore.QObject, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
+
+2024-01-11 16:18:01,065 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 16:19:47,256 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
+    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+KeyboardInterrupt
+
+2024-01-11 16:26:52,587 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
+    self.startProbeMem()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
+    self.myprobe = MyProbe()
+NameError: name 'MyProbe' is not defined
+
+2024-01-11 16:27:25,035 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
+    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+KeyboardInterrupt
+
+2024-01-11 16:42:33,944 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
+    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+KeyboardInterrupt
+
+2024-01-11 16:49:39,126 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 16:50:04,989 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
+    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+KeyboardInterrupt
+
+2024-01-11 16:52:35,743 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
+    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+KeyboardInterrupt
+
+2024-01-11 16:53:49,286 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 16:54:58,889 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:05,416 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:05,417 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:09,336 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:09,337 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:09,338 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
+    self.update_json.connect(lambda : self.controller.authUser())
+TypeError: authUser() missing 1 required positional argument: 'msg'
+
+2024-01-11 16:55:23,204 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-11 16:56:51,298 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+

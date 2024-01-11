@@ -1,34 +1,37 @@
 """
-@Description：子界面抽象类实现
+@Description：抽象控制类
 @Author：mysondrink@163.com
-@Time：2024/1/8 16:36
+@Time：2024/1/9 15:49
 """
+from PySide2.QtCore import QObject, Signal
+from controller.LogController import LogThread
 import sys
 import traceback
 
-from PySide2.QtGui import *
-from PySide2.QtCore import *
-from PySide2.QtWidgets import *
-from controller.LogController import LogThread
 
-class AbstractWidget(QWidget):
+class AbstractController(QObject):
     update_log = Signal(str)
+    update_json = Signal(dict)
 
-    def __init__(self) -> object:
+    def __init__(self):
         """
         构造函数，初始化日志类
-        Returns:
-            object
         """
         super().__init__()
-        self.logThread = LogThread()
-        self.logThread.start()
-        self.update_log.connect(self.logThread.getLogMsg)
+        self.log_thread = LogThread()
+        self.log_thread.start()
+        self.update_log.connect(self.log_thread.getLogMsg)
         sys.excepthook = self.HandleException
+
+    def __del__(self):
+        """
+        析构函数，打印类名
+        """
+        print(f"del object is {self.__class__.__name__}")
 
     def HandleException(self, excType, excValue, tb) -> None:
         """
-        捕获和输出异常类
+        自动捕获和输出异常类
         Args:
             excType: 异常类型
             excValue: 异常对象
@@ -46,7 +49,7 @@ class AbstractWidget(QWidget):
 
     def sendException(self) -> None:
         """
-        发送异常信息
+        手动发送异常信息
         Returns:
             None
         """

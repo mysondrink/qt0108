@@ -4,7 +4,8 @@
 @Time：2024/1/9 10:32
 """
 # import pymysql
-from PySide2.QtCore import QThread, Signal
+from PySide2.QtCore import Signal
+from controller.AbstractThread import AbstractThread
 import time
 
 # from func.infoPage import infoMessage
@@ -15,9 +16,7 @@ FAILED_CODE = 404
 SUCCEED_CODE = 202
 
 
-class CheckDataBaseThread(QThread):
-    update_json = Signal(dict)
-
+class CheckDataBaseThread(AbstractThread):
     def __init__(self) -> object:
         """
         构造函数
@@ -61,3 +60,5 @@ class CheckDataBaseThread(QThread):
             code_msg = FAILED_CODE
             status_msg = 1
             self.update_json.emit(dict(info=info_msg, code=code_msg, status=status_msg))
+        finally:
+            self.log_thread.deleteLater()

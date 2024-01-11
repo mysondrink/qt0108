@@ -14,14 +14,10 @@ SUCCEED_CODE = 202
 
 
 class CheckCameraThread(AbstractThread):
-    update_json = Signal(dict)
-
-    def __init__(self) -> object:
+    def __init__(self):
         """
         构造函数
         初始化线程，调用父类方法进行日志记录
-        Returns:
-            object
         """
         super().__init__()
 
@@ -39,7 +35,6 @@ class CheckCameraThread(AbstractThread):
             status_msg = 1
             self.update_json.emit(dict(info=info_msg, code=code_msg, status=status_msg))
             time.sleep(TIME_TO_SLEEP)
-            a = 1/0
             info_msg = "连接摄像头成功！"
             code_msg = SUCCEED_CODE
             status_msg = self.currentThread()

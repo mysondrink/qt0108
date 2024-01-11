@@ -3,9 +3,10 @@
 @Author：mysondrink@163.com
 @Time：2024/1/9 10:08
 """
-from PySide2.QtCore import Signal
+from PySide2.QtCore import Signal, QThread
 from PySide2.QtNetwork import QNetworkInterface, QAbstractSocket
 from controller.AbstractThread import AbstractThread
+from controller.AbstractController import AbstractController
 
 TIME_TO_SLEEP = 2
 TRYLOCK_TIME = -1
@@ -14,14 +15,10 @@ SUCCEED_CODE = 202
 
 
 class CheckBlinkThread(AbstractThread):
-    update_json = Signal(dict)
-
-    def __init__(self) -> object:
+    def __init__(self):
         """
         构造函数
         初始化线程，调用父类方法进行日志记录
-        Returns:
-            object
         """
         super().__init__()
 
@@ -72,3 +69,5 @@ class CheckBlinkThread(AbstractThread):
             self.update_json.emit(dict(info=info_msg, code=code_msg, status=status_msg))
             print(e)
             self.sendException()
+        # finally:
+        #     self.log_thread.deleteLater()
