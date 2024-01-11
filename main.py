@@ -19,7 +19,7 @@ def main() -> None:
     """
     主程序入口
     Returns:
-        null
+        None
     """
     app = QApplication()
     w = LoadPage()
