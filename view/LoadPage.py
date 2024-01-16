@@ -85,7 +85,7 @@ class LoadPage(Ui_Form, AbstractPage):
         self.myBlinkThread.update_json.connect(self.blinkAssess)
         self.thread_timer = QTimer()
         self.thread_timer.timeout.connect(self.myBlinkThread.start)
-        self.thread_timer.timeout.connect(lambda: print("thread_timer"))
+        # self.thread_timer.timeout.connect(lambda: print("thread_timer"))
         thread_delay_time = 2000
         self.thread_timer.start(thread_delay_time)
 
@@ -210,6 +210,7 @@ class LoadPage(Ui_Form, AbstractPage):
     """
     添加完各个view的controller后重写此方法
     """
+
     def changePage(self, msg):
         try:
             # 设置栈为2
@@ -306,6 +307,16 @@ class LoadPage(Ui_Form, AbstractPage):
         """
         self.update_json.connect(self.cur_page.getData)  # 更改，发送给controller
         self.update_json.emit(msg)
+
+    def showErrorDialog(self) -> None:
+        """
+        显示系统错误弹窗
+        Returns:
+            None
+        """
+        info = "系统错误"
+        print(info + " from ", self._s.currentWidget())
+        self.showInfoDialog(info)
 
     @Slot()
     def on_btnRetry_clicked(self) -> None:

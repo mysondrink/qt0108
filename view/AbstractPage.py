@@ -8,36 +8,30 @@ from view.AbstractDialog import AbsctractDialog
 from PySide2.QtCore import Qt, QSize
 from PySide2.QtGui import QImage, QPixmap
 
-class ErrorDialog(AbsctractDialog):
-    def __int__(self):
-        super().__int__()
+
+class ProcessDialog(AbsctractDialog):
+    def __init__(self):
+        super().__init__()
 
     def mouseDoubleClickEvent(self, msg):
         pass
 
+
 class AbstractPage(AbstractWidget):
     def __init__(self):
+        """
+        继承构造函数
+        将日志处理连接到对话框
+        """
         super().__init__()
-        self.update_info.connect(self.showInfo)
+        self.update_info.connect(self.showInfoDialog)
+        # self.update_log.connect(self.showErrorDialog)
 
-    def HandleException(self, excType, excValue, tb) -> None:
-        super().HandleException(excType, excValue, tb)
-        dialog = ErrorDialog()
-        dialog.setParent(self)
-        # dialog.setAttribute(Qt.CustomizeWindowHint | Qt.FramelessWindowHint)
-        dialog.setInfo("系统错误")
-        dialog.hideProgress()
-        dialog.show()
-
-    """
-    @detail 设置按钮图标比例
-    @param path: 图片路径
-    """
     def mySetIconSize(self, path) -> QPixmap:
         """
-
+        设置按钮图标比例
         Args:
-            path:
+            path: 图片路径
 
         Returns:
             pixImg: QPixmap
@@ -50,7 +44,15 @@ class AbstractPage(AbstractWidget):
             img.scaled(size, Qt.IgnoreAspectRatio))  # 修改图片实例大小并从QImage实例中生成QPixmap实例以备放入QLabel控件中
         return pixImg
 
-    def showInfo(self, msg):
+    def showInfoDialog(self, msg) -> None:
+        """
+        显示弹窗
+        Args:
+            msg: 需要显示的弹窗信息
+
+        Returns:
+            None
+        """
         dialog = AbsctractDialog()
         dialog.setInfo(msg)
         dialog.setParent(self)

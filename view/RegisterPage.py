@@ -4,13 +4,11 @@
 @Time：2024/1/11 10:21
 """
 import pymysql
-import sys
-import traceback
 import util.frozen as frozen
-# from func.infoPage import infoMessage
 from view.gui.register import *
 from third_party.keyboard.keyboard import KeyBoard
 from view.AbstractPage import AbstractPage
+from controller.RegisterController import RegisterController
 
 
 class RegisterPage(Ui_Form, AbstractPage):
@@ -18,20 +16,24 @@ class RegisterPage(Ui_Form, AbstractPage):
     update_json = Signal(dict)
     update_log = Signal(str)
 
-    """
-    @detail 初始化加载界面信息，同时创建记录异常的信息
-    @detail 构造函数
-    """
     def __init__(self):
+        """
+        构造函数
+        初始化注册界面信息，同时创建记录异常的信息
+        """
         super().__init__()
         self.ui = Ui_Form()
         self.ui.setupUi(self)
         self.InitUI()
+        self.controller = RegisterController()
+        self.controller.update_json.connect(self.getControllerInfo)
 
-    """
-    @detail 设置界面相关信息
-    """
-    def InitUI(self):
+    def InitUI(self) -> None:
+        """
+        设置界面相关信息
+        Returns:
+            None
+        """
         self.setWindowFlags(Qt.Window | Qt.WindowStaysOnTopHint)
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
@@ -47,48 +49,64 @@ class RegisterPage(Ui_Form, AbstractPage):
         self.setFocusWidget()
         self.installEvent()
 
-    """
-    @detail 安装事件监听
-    """
-    def installEvent(self):
+    def installEvent(self) -> None:
+        """
+        安装事件监听
+        Returns:
+            None
+        """
         for item in self.focuswidget:
             item.installEventFilter(self)
 
-    """
-    @detail 设置组件点击焦点
-    """
-    def setFocusWidget(self):
+    def setFocusWidget(self) -> None:
+        """
+        设置组件点击焦点
+        Returns:
+            None
+        """
         self.focuswidget = [self.ui.nameLine, self.ui.pwdLine, self.ui.pwdLine_2]
         for item in self.focuswidget:
             item.setFocusPolicy(Qt.ClickFocus)
 
-    """
-    @detail 事件过滤
-    @detail 槽函数
-    @param obj: 发生事件的组件
-    @param event: 发生的事件
-    """
-    def eventFilter(self, obj, event):
+    def eventFilter(self, obj, event) -> None:
+        """
+        槽函数
+        事件过滤
+        Args:
+            obj: 发生事件的组件
+            event: 发生的事件
+
+        Returns:
+            None
+        """
         if obj in self.focuswidget:
             if event.type() == QEvent.Type.FocusIn:
                 # print(obj.setText("hello"))
                 self.setKeyBoard(obj)
 
-    """
-    @detail 获取键盘的文本信息
-    @detail 槽函数
-    @param msg: 信号，键盘文本信息
-    """
-    def getKeyBoardText(self, msg):
+    def getKeyBoardText(self, msg) -> None:
+        """
+        槽函数
+        获取键盘的文本信息
+        Args:
+            msg: 信号，键盘文本信息
+
+        Returns:
+            None
+        """
         self.focusWidget().setText(msg)
         self.focusWidget().clearFocus()
 
-    """
-    @detail 设置可以键盘弹出的组件
-    @detail 槽函数
-    @param obj: 键盘弹出的组件
-    """
-    def setKeyBoard(self, obj):
+    def setKeyBoard(self, obj) -> None:
+        """
+        槽函数
+        设置可以键盘弹出的组件
+        Args:
+            obj: 键盘弹出的组件
+
+        Returns:
+            None
+        """
         self.keyboardtext = KeyBoard()
         self.keyboardtext.text_msg.connect(self.getKeyBoardText)
         obj_name = obj.objectName()
@@ -102,34 +120,52 @@ class RegisterPage(Ui_Form, AbstractPage):
             self.keyboardtext.nameLabel.setText("再次输入")
         self.keyboardtext.showWindow()
 
-    """
-    @detail 输入检测
-    @detail 检测输入的用户名和密码
-    """
-    def checkName(self):
-        if self.ui.pwdLine.text() == "" or self.ui.nameLine.text() == "" or self.ui.pwdLine_2.text() == "" :
-            m_title = "错误"
-            m_title = ""
-            m_info = "请输入用户名或密码！"
-            infoMessage(m_info, m_title)
-        elif self.ui.pwdLine.text() != self.ui.pwdLine_2.text():
-            m_title = "错误"
-            m_title = ""
-            m_info = "两次输入不正确！"
-            infoMessage(m_info, m_title)
-        else:
-            self.insertUser()
-            # self.setUserDict()
-            m_title = ""
-            m_info = "操作成功！"
-            infoMessage(m_info, m_title, 300)
+    def getControllerInfo(self, msg) -> None:
+        """
+        获取controller的信息
+        Args:
+            msg: 返回的信息
+
+        Returns:
+            None
+        """
+        code = msg['code']
+        if code == 202:
             page_msg = 'LoginPage'
             self.next_page.emit(page_msg)
+            info = "注册成功!"
+            self.showInfo(info)
+        elif code == 404:
+            info = "注册失败!"
+            self.showInfo(info)
+        return
 
-    """
-    @detail 注册用户写入数据库
-    """
-    def insertUser(self):
+    def checkName(self) -> None:
+        """
+        输入检测
+        检测输入的用户名和密码
+        Returns:
+            None
+        """
+        if self.ui.pwdLine.text() == "" or self.ui.nameLine.text() == "" or self.ui.pwdLine_2.text() == "" :
+            info = "请输入用户名或密码！"
+            self.showInfo(info)
+        elif self.ui.pwdLine.text() != self.ui.pwdLine_2.text():
+            info = "两次输入不正确！"
+            self.showInfo(info)
+        else:
+            name = self.ui.nameLine.text()
+            password = self.ui.pwdLine.text()
+            self.controller.insertUser(name, password)
+        return
+
+    def insertUser(self) -> None:
+        """
+        abandoned
+        注册用户写入数据库
+        Returns:
+            None
+        """
         user_name = self.ui.nameLine.text()
         user_code = self.ui.pwdLine.text()
         connection = pymysql.connect(host="127.0.0.1", user="root", password="password", port=3306, database="test",
@@ -152,20 +188,24 @@ class RegisterPage(Ui_Form, AbstractPage):
         cursor.close()
         connection.close()
 
-    """
-    @detail 返回按钮操作
-    @detail 槽函数
-    """
     @Slot()
-    def on_btnReturn_clicked(self):
+    def on_btnReturn_clicked(self) -> None:
+        """
+        槽函数
+        返回按钮操作
+        Returns:
+            None
+        """
         page_msg = 'LoginPage'
         self.next_page.emit(page_msg)
 
-    """
-    @detail 确认按钮操作
-    @detail 槽函数
-    """
     @Slot()
-    def on_btnConfirm_clicked(self):
+    def on_btnConfirm_clicked(self) -> None:
+        """
+        槽函数
+        确认按钮操作
+        Returns:
+            None
+        """
         self.checkName()
 

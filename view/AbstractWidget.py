@@ -26,6 +26,7 @@ class AbstractWidget(QWidget):
         self.logThread = LogThread()
         self.logThread.start()
         self.update_log.connect(self.logThread.getLogMsg)
+        self.logThread.error_info.connect(self.showErrorDialog) # 捕获线程或其他非界面类的错误
         sys.excepthook = self.HandleException
 
     def __del__(self):
@@ -52,7 +53,7 @@ class AbstractWidget(QWidget):
             tb: 异常的trace back
 
         Returns:
-
+            None
         """
         sys.__excepthook__(excType, excValue, tb)
         err_msg = "".join(traceback.format_exception(excType, excValue, tb))
@@ -82,4 +83,7 @@ class AbstractWidget(QWidget):
         pass
 
     def infoMessage(self) -> None:
+        pass
+
+    def showErrorDialog(self) -> None:
         pass

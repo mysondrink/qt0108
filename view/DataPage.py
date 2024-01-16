@@ -1,14 +1,5 @@
-"""
-@Description：数据结果界面显示
-@Author：mysondrink@163.com
-@Time：2024/1/11 10:35
-"""
 import os
-import random
 import re
-import time
-import sys
-import traceback
 import pymysql
 
 # from func.infoPage import infoMessage
@@ -17,13 +8,12 @@ import util.frozen as frozen
 from util import dirs
 from util.report import MyReport
 import cv2 as cv
+import datetime
+import numpy as np
 from view.AbstractPage import AbstractPage
 
-class DataPage(Ui_Form, AbstractPage):
-    next_page = Signal(str)
-    update_json = Signal(dict)
-    update_log = Signal(str)
 
+class DataPage(Ui_Form, AbstractPage):
     """
     @detail 初始化加载界面信息，同时创建记录异常的信息
     @detail 构造函数
@@ -31,7 +21,6 @@ class DataPage(Ui_Form, AbstractPage):
 
     def __init__(self):
         super().__init__()
-        self.pix_table_model = None
         self.ui = Ui_Form()
         self.ui.setupUi(self)
         self.InitUI()
@@ -45,6 +34,8 @@ class DataPage(Ui_Form, AbstractPage):
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.ui.stackedWidget.setCurrentIndex(0)
+        self.ui.stackedWidget.setCurrentIndex(3)  # 取消图片显示
+        self.ui.btnPic.hide()
         self.setBtnIcon()
         self.ui.tableView.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.ui.tableView_2.setEditTriggers(QAbstractItemView.NoEditTriggers)
@@ -106,6 +97,7 @@ class DataPage(Ui_Form, AbstractPage):
         self.row_exetable = int(self.data['row_exetable'])
         self.column_exetable = int(self.data['column_exetable'])
 
+        print("row,column:", self.row_exetable, self.column_exetable)
         name_pic = self.data['name_pic']
         cur_time = self.data['time']
         pic_path = self.data['pic_path']
@@ -133,30 +125,18 @@ class DataPage(Ui_Form, AbstractPage):
         self.ui.leftLabel.setText(self.test_time)
 
         # 测试
-        img_right = cv.imread('%s\\img\\%s\\%s-2.jpeg' % (frozen.app_path(), pic_path, name_pic))  # windows
-        img_left = cv.imread('%s\\img\\%s\\%s-1.jpeg' % (frozen.app_path(), pic_path, name_pic))  # windows
+        # img_right = cv.imread('%s\\img\\%s\\%s-2.jpeg' % (frozen.app_path(), pic_path, name_pic))  # windows
+        # img_left = cv.imread('%s\\img\\%s\\%s-1.jpeg' % (frozen.app_path(), pic_path, name_pic))  # windows
         # img_right = cv.imread('%s/img/%s/%s-2.jpeg' % (frozen.app_path(), pic_path, name_pic))  # linux
         # img_left = cv.imread('%s/img/%s/%s-1.jpeg' % (frozen.app_path(), pic_path, name_pic))  # linux
-        img_right = self.resizePhoto(img_right)
-        img_left = self.resizePhoto(img_left)
-
-        self.ui.photoLabel.setPixmap(img_right)
-        self.ui.photoLabel.setScaledContents(True)
-
-        self.ui.picLabel.setPixmap(img_left)
-        self.ui.picLabel.setScaledContents(True)
-        # self.ui.photoLabel.setPixmap(pixmap)
+        # img_right = self.resizePhoto(img_right)
+        # img_left = self.resizePhoto(img_left)
+        #
+        # self.ui.photoLabel.setPixmap(img_right)
         # self.ui.photoLabel.setScaledContents(True)
-        # self.ui.photoLabel.setAlignment(Qt.AlignCenter)
-        # self.ui.photoLabel.setStyleSheet("QLabel{"
-        #                                  "border-image: url(./img/%s/%s.jpeg); "
-        #                                  "font: 20pt; "
-        #                                  "color: rgb(255,0,0);"
-        #                                  "background-position: center;}" % (pic_path, name_pic))  # windows环境
-        # self.ui.photoLabel.setStyleSheet("QLabel{"
-        #                                  "border-image: url(%s/img/%s/%s.jpeg); "
-        #                                  "font: 20pt; "
-        #                                  "color: rgb(255,0,0);}" % (frozen.app_path(), pic_path, name_pic))  # linux环境
+        #
+        # self.ui.picLabel.setPixmap(img_left)
+        # self.ui.picLabel.setScaledContents(True)
         if self.info == 201:
             gray_row = self.data['gray_row']
             gray_column = self.data['gray_column']
@@ -167,18 +147,19 @@ class DataPage(Ui_Form, AbstractPage):
                         if i - flag < gray_row and j < gray_column:
                             # item = QStandardItem(str(gray_aver[i - flag][j]))
                             # pix_num = int(gray_aver[i - flag][j])
-                            # pix_num = int(float(gray_aver[i - flag][j]) * self.pic_para)
-                            pix_num = random.randint(15428, 16428)
+                            pix_num = int(float(gray_aver[i - flag][j]) * pic_para)
+                            # pix_num = random.randint(15428, 16428)
                             item = QStandardItem(str(pix_num))
                         else:
                             item = QStandardItem(str(0))
                         item.setTextAlignment(Qt.AlignCenter)
                         self.pix_table_model.setItem(i, j, item)
                 else:
-                    num = i % 3
-                    for j in range(0, self.column_exetable):
+                    # num = i % 3
+                    for j in range(self.column_exetable):
                         if j < gray_column:
-                            item = QStandardItem(reagent_matrix_info[num][j])
+                            item = QStandardItem(reagent_matrix_info[flag][j])
+                            # item = QStandardItem(reagent_matrix_info[num][j])
                         else:
                             item = QStandardItem(str(0))
                         item.setTextAlignment(Qt.AlignCenter)
@@ -188,12 +169,15 @@ class DataPage(Ui_Form, AbstractPage):
 
             # self.ftpServer(base64_data)   #上传图片到服务器
         elif self.info == 202:
-            reagent_matrix_info = re.split(r",", reagent_matrix_info)[1:]
-            for i in range(self.row_exetable + int(self.row_exetable / 2)):
-                for j in range(self.column_exetable):
-                    item = QStandardItem(reagent_matrix_info[i * self.column_exetable + j])
-                    item.setTextAlignment(Qt.AlignCenter)
-                    self.pix_table_model.setItem(i, j, item)
+            self.allergy_info = reagent_matrix_info
+            point_str = self.data['point_str']
+            self.showDataView(point_str + reagent_matrix_info)
+            # reagent_matrix_info = re.split(r",", reagent_matrix_info)[1:]
+            # for i in range(self.row_exetable + int(self.row_exetable / 2)):
+            #     for j in range(self.column_exetable):
+            #         item = QStandardItem(reagent_matrix_info[i * self.column_exetable + j])
+            #         item.setTextAlignment(Qt.AlignCenter)
+            #         self.pix_table_model.setItem(i, j, item)
 
     """
     @detail 调整图片自适应label大小
@@ -244,7 +228,8 @@ class DataPage(Ui_Form, AbstractPage):
 
     def insertMysql(self, name_pic, cur_time):
         reagent_matrix_info = str(self.readPixtable())
-        self.showDataView(reagent_matrix_info)
+        point_str = self.data["point_str"]
+        self.showDataView(point_str + reagent_matrix_info)
         patient_id = self.data['patient_id']
 
         # name_id = random.randint(1,199)
@@ -263,15 +248,17 @@ class DataPage(Ui_Form, AbstractPage):
         name = self.data['name']
         matrix = self.data['matrix']
         code_num = self.data['code_num']
-
+        points = self.data['point_str']
+        gray_aver = self.data['gray_aver_str']
+        nature_aver = self.data['nature_aver_str']
         connection = pymysql.connect(host="127.0.0.1", user="root", password="password", port=3306, database="test",
                                      charset='utf8')
         # MySQL语句
         sql = 'INSERT IGNORE INTO patient_copy1(name, patient_id, age, gender) VALUES (%s,%s,%s,%s)'
         sql_2 = "INSERT IGNORE INTO reagent_copy1(reagent_type, patient_id, reagent_photo, " \
                 "reagent_time, reagent_code, doctor, depart, reagent_matrix, reagent_time_detail, " \
-                "reagent_matrix_info, patient_name, patient_age, patient_gender) " \
-                "VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                "reagent_matrix_info, patient_name, patient_age, patient_gender, points, gray_aver, nature_aver) " \
+                "VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s, %s, %s, %s)"
 
         # 获取标记
         cursor = connection.cursor()
@@ -279,8 +266,9 @@ class DataPage(Ui_Form, AbstractPage):
             # 执行SQL语句
             cursor.execute(sql, [patient_name, patient_id, patient_age, patient_gender])
             cursor.execute(sql_2, [item_type, patient_id, pic_name, cur_time[0],
-                                   code_num, doctor, depart, matrix, cur_time[1], reagent_matrix_info, name, age,
-                                   patient_gender])
+                                   code_num, doctor, depart, matrix, cur_time[1],
+                                   reagent_matrix_info, name, age, patient_gender,
+                                   points, gray_aver, nature_aver])
             # 提交事务
             connection.commit()
         except Exception as e:
@@ -412,8 +400,8 @@ class DataPage(Ui_Form, AbstractPage):
     """
 
     def showDataView(self, data):
-        title_list = ["定位点", "", "定位点", "", "定位点", 1, 2, 3, 4, 5]
-        data_copy = re.split(r",", data)[1:]
+        title_list = ["定位点", "", "定位点", "", "定位点"]
+        data_copy = re.split(r",", data)
         data_copy = title_list + data_copy
         row = self.pix_table_model_copy.rowCount()
         column = self.pix_table_model_copy.columnCount()
@@ -433,15 +421,25 @@ class DataPage(Ui_Form, AbstractPage):
     @Slot()
     def on_btnPrint_clicked(self):
         print("print")
-        m_title = ""
-        m_info = "输出表格成功!"
-        infoMessage(m_info, m_title, 300)
-        time.sleep(1)
-        return
+        # m_title = ""
+        # m_info = "输出表格成功!"
+        # infoMessage(m_info, m_title, 300)
+        # time.sleep(1)
         time_now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         test_time = self.test_time
-        myEm5822_Print = Em5822_Print(test_time, time_now)
-        myEm5822_Print.em5822_print()
+        Data_Base = [self.data['patient_name'], self.data['patient_gender'], self.data['patient_id'],
+                     self.data['code_num'], '检测组合' + self.data['item_type'], test_time, time_now]
+        gray_aver_str = self.data['gray_aver_str'].split(",")[1:]
+        nature_aver_str = self.data['nature_aver_str'].split(",")[1:]
+        array_gray_aver = np.array(gray_aver_str)
+        array_nature_aver = np.array(nature_aver_str)
+        matrix_gray_aver = array_gray_aver.reshape(9, 5)
+        matrix_nature_aver = array_nature_aver.reshape(8, 5)
+        Data_Nature = matrix_gray_aver
+        Data_Light = matrix_nature_aver
+        return
+        myEm5822_Print = Em5822_Print()
+        myEm5822_Print.em5822_print(Data_Base, Data_Nature, Data_Light)
         m_title = ""
         m_info = "输出表格成功!"
         infoMessage(m_info, m_title, 300)

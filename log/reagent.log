@@ -1,274 +1,399 @@
-2024-01-11 15:29:55,721 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:30:02,426 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
-    def paintEvent(self, event):
-KeyboardInterrupt
-
-2024-01-11 15:30:11,642 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:30:16,129 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
-    def paintEvent(self, event):
-KeyboardInterrupt
-
-2024-01-11 15:32:59,815 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:33:04,844 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
-    def paintEvent(self, event):
-KeyboardInterrupt
-
-2024-01-11 15:36:25,736 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:36:29,029 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
-    def showCurrentTime(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 15:36:42,191 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:37:21,839 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:37:23,988 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
-    def blinkIcon(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 15:37:37,360 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:50:10,847 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:50:20,344 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
-    def blinkIcon(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 15:50:49,711 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:51:55,886 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 15:53:14,365 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+2024-01-16 15:20:04,315 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
   File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
     self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:17,252 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:19,844 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:20,221 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:20,397 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:20,573 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:20,974 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:21,133 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:21,294 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:21,661 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:23,525 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:23,749 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-KeyError: 'homePage'
-
-2024-01-11 15:53:24,999 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
-    def showCurrentTime(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 16:16:30,669 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 229, in changePage
-    self.cur_page = globals()[msg]()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 31, in __init__
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
     self.InitUI()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 51, in InitUI
-    self.controller.update_json.connect(self.getInfo())
-TypeError: getInfo() missing 1 required positional argument: 'msg'
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 52, in InitUI
+    self.mypicthread.error_info.connect(self.showErrorDialog)
+AttributeError: 'MyPicThread' object has no attribute 'error_info'
 
-2024-01-11 16:17:04,386 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 265, in on_loginBtn_clicked
-    self.update_json.connect(self.controller)
-TypeError: 'PySide2.QtCore.QObject.connect' called with wrong argument types:
-  PySide2.QtCore.QObject.connect(LoginPage, str, LoginController)
-Supported signatures:
-  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, typing.Callable, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-  PySide2.QtCore.QObject.connect(bytes, typing.Callable, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-  PySide2.QtCore.QObject.connect(bytes, PySide2.QtCore.QObject, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, PySide2.QtCore.QMetaMethod, PySide2.QtCore.QObject, PySide2.QtCore.QMetaMethod, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-  PySide2.QtCore.QObject.connect(PySide2.QtCore.QObject, bytes, PySide2.QtCore.QObject, bytes, PySide2.QtCore.Qt.ConnectionType = PySide2.QtCore.Qt.ConnectionType.AutoConnection)
-
-2024-01-11 16:18:01,065 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
-    def blinkIcon(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 16:19:47,256 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
-    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
-KeyboardInterrupt
-
-2024-01-11 16:26:52,587 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 119, in on_btnData_clicked
-    self.startProbeMem()
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\HomePage.py", line 84, in startProbeMem
-    self.myprobe = MyProbe()
-NameError: name 'MyProbe' is not defined
-
-2024-01-11 16:27:25,035 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
-    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
-KeyboardInterrupt
-
-2024-01-11 16:42:33,944 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
-    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
-KeyboardInterrupt
-
-2024-01-11 16:49:39,126 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
-    def blinkIcon(self) -> None:
-KeyboardInterrupt
-
-2024-01-11 16:50:04,989 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
-    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
-KeyboardInterrupt
-
-2024-01-11 16:52:35,743 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 88, in <lambda>
-    self.thread_timer.timeout.connect(lambda: print("thread_timer"))
-KeyboardInterrupt
-
-2024-01-11 16:53:49,286 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+2024-01-16 15:20:11,310 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
   File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
     def showCurrentTime(self) -> None:
 KeyboardInterrupt
 
-2024-01-11 16:54:58,889 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
+2024-01-16 15:24:14,557 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 54, in run
+    self.imgAcq.img_acquire(time_now)
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\third_party\img\img_acquire.py", line 53, in img_acquire
+    cv2.imwrite(self.pathSa + "%s.jpeg" % name, img)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:786: error: (-215:Assertion failed) !_img.empty() in function 'cv::imwrite'
 
-2024-01-11 16:55:05,416 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
 
-2024-01-11 16:55:05,417 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
+2024-01-16 15:24:36,635 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 67, in paintEvent
+    pen = QPainter(self)
+KeyboardInterrupt
 
-2024-01-11 16:55:09,336 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
+2024-01-16 15:28:18,656 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 63, in run
+    judge_flag, self.gray_aver, self.nature_aver = self.imgPro.process(
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\third_party\img\img_process.py", line 645, in process
+    img_ori = self.img_read(path_read)
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\third_party\img\img_process.py", line 215, in img_read
+    img_original = cv.cvtColor(cv.imread(path_read), cv.COLOR_RGB2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
 
-2024-01-11 16:55:09,337 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
 
-2024-01-11 16:55:09,338 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
-  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoginPage.py", line 203, in <lambda>
-    self.update_json.connect(lambda : self.controller.authUser())
-TypeError: authUser() missing 1 required positional argument: 'msg'
+2024-01-16 15:28:44,565 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
 
-2024-01-11 16:55:23,204 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+2024-01-16 15:30:21,084 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 63, in run
+    judge_flag, self.gray_aver, self.nature_aver = self.imgPro.process(
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\third_party\img\img_process.py", line 645, in process
+    img_ori = self.img_read(path_read)
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\third_party\img\img_process.py", line 215, in img_read
+    img_original = cv.cvtColor(cv.imread(path_read), cv.COLOR_RGB2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+
+2024-01-16 15:30:31,459 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-16 15:31:17,266 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 63, in run
+    judge_flag, self.gray_aver, self.nature_aver = self.imgPro.process(
+ValueError: not enough values to unpack (expected 3, got 2)
+
+2024-01-16 15:31:25,884 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-16 15:34:57,342 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 63, in run
+    judge_flag, self.gray_aver, self.nature_aver = self.imgPro.process(
+ValueError: not enough values to unpack (expected 3, got 2)
+
+2024-01-16 15:35:01,986 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractDialog.py", line 60, in paintEvent
+    def paintEvent(self, event):
+KeyboardInterrupt
+
+2024-01-16 15:37:53,995 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 352, in takePicture
+    gray_aver = img_final[0]
+TypeError: 'NoneType' object is not subscriptable
+
+2024-01-16 15:39:16,721 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
   File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
     def blinkIcon(self) -> None:
 KeyboardInterrupt
 
-2024-01-11 16:56:51,298 - LogController.py[line:81] - ERROR: Traceback (most recent call last):
+2024-01-16 15:41:06,238 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:43:16,829 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:43:37,609 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:44:59,973 - LogController.py[line:83] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:45:59,502 - LogController.py[line:84] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:46:50,071 - LogController.py[line:84] - ERROR: Traceback (most recent call last):
   File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 276, in showCurrentTime
     def showCurrentTime(self) -> None:
 KeyboardInterrupt
+
+2024-01-16 15:47:09,534 - LogController.py[line:84] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:47:30,325 - LogController.py[line:84] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:48:44,821 - LogController.py[line:84] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:52:14,938 - LogController.py[line:87] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:55:39,407 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:55:57,524 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:56:51,724 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:56:54,286 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:57:27,600 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:57:51,380 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 15:58:45,865 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 15:59:58,038 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:01:46,110 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:02:03,889 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:03:03,668 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:05:15,961 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:08:45,954 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\main.py", line 31, in <module>
+    main()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\main.py", line 25, in main
+    w = LoadPage()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 40, in __init__
+    super().__init__()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\AbstractPage.py", line 28, in __init__
+    self.update_log.conect(self.showErrorDialog)
+AttributeError: 'PySide2.QtCore.SignalInstance' object has no attribute 'conect'
+
+2024-01-16 16:09:11,657 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:12:21,837 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:12:25,254 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:12:28,050 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 277, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:20:48,711 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:21:20,688 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:21:23,224 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:22:02,944 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:22:06,129 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:22:19,561 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:22:25,140 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:22:28,412 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 277, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:23:04,588 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:23:23,818 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:24:10,973 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 440, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 16:25:43,976 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 318, in showErrorDialog
+    print(info + " from " + self._s.currentWidget())
+TypeError: can only concatenate str (not "HomePage") to str
+
+2024-01-16 16:25:43,976 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 16:26:02,421 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 16:26:11,599 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 26, in __init__
+    self.InitUI()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 50, in InitUI
+    self.mypicthread = MyPicThread()
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\controller\PicController.py", line 30, in __init__
+    super().__init__(parent)
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2024-01-16 17:05:24,447 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 542, in on_btnConfirm_clicked
+    print(self.genderCb.isPressed())
+AttributeError: 'PySide2.QtWidgets.QButtonGroup' object has no attribute 'isPressed'
+
+2024-01-16 17:06:04,217 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 541, in on_btnConfirm_clicked
+    print(self.genderCb.isPressed())
+AttributeError: 'PySide2.QtWidgets.QButtonGroup' object has no attribute 'isPressed'
+
+2024-01-16 17:06:09,280 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 17:20:19,992 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\TestPage.py", line 389, in takePicture
+    self.testinfo.closeWin()
+AttributeError: 'TestPage' object has no attribute 'testinfo'
+
+2024-01-16 17:22:18,222 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+
+2024-01-16 17:23:16,072 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'testPage'
+
+2024-01-16 17:23:19,479 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 230, in changePage
+    self.cur_page = globals()[msg]()
+KeyError: 'testPage'
 

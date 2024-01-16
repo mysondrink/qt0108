@@ -50,6 +50,7 @@ class AbstractThread(QThread):
         Returns:
 
         """
+        print("m_info")
         sys.__excepthook__(excType, excValue, tb)
         err_msg = "".join(traceback.format_exception(excType, excValue, tb))
         self.update_log.emit(err_msg)

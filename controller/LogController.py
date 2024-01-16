@@ -3,7 +3,9 @@
 @Author：mysondrink@163.com
 @Time：2024/1/8 16:41
 """
-from PySide2.QtCore import QThread
+import time
+
+from PySide2.QtCore import QThread, Signal
 import util.frozen as frozen
 import logging
 import sys
@@ -13,6 +15,7 @@ LOG_FILE = frozen.app_path() + r"/log/reagent.log"
 
 
 class LogThread(QThread):
+    error_info = Signal()
     """
     @detail 初始化线程
     @detail 构造函数
@@ -78,4 +81,5 @@ class LogThread(QThread):
         Returns:
             None
         """
+        self.error_info.emit()
         self.logger.error(msg)
