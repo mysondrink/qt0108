@@ -11,6 +11,10 @@
     <div>
         <h1 align="center">荧光分析仪</h1>
         <h2 align="center">采用前后端分离的设计，本项目为第一版设计的升级，为第二版软件</h2>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=mysondrink&theme=dark&border=none;"  height=180px;/> 
+    </div>
+    <div align="center">
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=mysondrink&theme=react-dark"> 
     </div>
 </template>
 
