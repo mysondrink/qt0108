@@ -64,6 +64,7 @@ class MyPicThread(AbstractThread):
             path_read=frozen.app_path() + r'/third_party/img/picture/' + time_now + '.jpeg',
             path_write=frozen.app_path() + r'/third_party/img/img_out/', combina=item_type, radius=40)
         w, h = self.nature_aver.shape
+        w = w - 1
         print(w, h)
         self.antibody_test_results = []
         self.antibody_test_points = []

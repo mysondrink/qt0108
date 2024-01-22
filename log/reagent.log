@@ -397,3 +397,13 @@ KeyError: 'testPage'
     self.cur_page = globals()[msg]()
 KeyError: 'testPage'
 
+2024-01-16 17:30:13,043 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 277, in showCurrentTime
+    def showCurrentTime(self) -> None:
+KeyboardInterrupt
+
+2024-01-17 09:22:15,292 - LogController.py[line:85] - ERROR: Traceback (most recent call last):
+  File "C:\Users\YGS_Tu\Desktop\code\python\qt0108\view\LoadPage.py", line 128, in blinkIcon
+    def blinkIcon(self) -> None:
+KeyboardInterrupt
+

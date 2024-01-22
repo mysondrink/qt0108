@@ -450,11 +450,11 @@ class TestPage(Ui_Form, AbstractPage):
         self.update_json.emit(dict(info=info_msg, data=data_json))
         return
 
-    def readPixtable(self) -> None:
+    def readPixtable(self) -> list:
         """
         读取表格内容，同时以list形式保存到数据库
         Returns:
-            None
+            list
         """
         reagent_matrix_info = []
         for i in range(self.row_exetable):

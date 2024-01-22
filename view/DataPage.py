@@ -14,22 +14,22 @@ from view.AbstractPage import AbstractPage
 
 
 class DataPage(Ui_Form, AbstractPage):
-    """
-    @detail 初始化加载界面信息，同时创建记录异常的信息
-    @detail 构造函数
-    """
-
     def __init__(self):
+        """
+        继承父类构造函数
+        初始化数据展示界面，同时创建记录异常的信息
+        """
         super().__init__()
         self.ui = Ui_Form()
         self.ui.setupUi(self)
         self.InitUI()
 
-    """
-    @detail 设置界面相关信息
-    """
-
-    def InitUI(self):
+    def InitUI(self) -> None:
+        """
+        设置界面相关信息
+        Returns:
+            None
+        """
         self.setWindowFlags(Qt.Window | Qt.WindowStaysOnTopHint)
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
@@ -41,20 +41,24 @@ class DataPage(Ui_Form, AbstractPage):
         self.ui.tableView_2.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.setTableWidget()
 
-    """
-    @detail 窗口关闭事件
-    @param evnet: 响应事件, 窗口关闭
-    """
+    def closeEvent(self, event) -> None:
+        """
+        窗口关闭事件
+        Args:
+            event: 响应事件，窗口关闭
 
-    def closeEvent(self, event):
+        Returns:
+            None
+        """
         self.setParent(None)
         event.accept()  # 表示同意了，结束吧
 
-    """
-    @detail 设置按钮图标
-    """
-
-    def setBtnIcon(self):
+    def setBtnIcon(self) -> None:
+        """
+        设置按钮图标
+        Returns:
+            None
+        """
         confirm_icon_path = frozen.app_path() + r"/res/icon/confirm.png"
         self.ui.btnData.setIconSize(QSize(32, 32))
         self.ui.btnData.setIcon(QIcon(confirm_icon_path))
@@ -80,13 +84,16 @@ class DataPage(Ui_Form, AbstractPage):
         self.ui.btnReturn.setIcon(QIcon(return_icon_path))
 
     # this is a data get slot
-    """
-    @detail 获取信息
-    @detail 信息来自testPage和historyPage页面，信息包括图片信息和数据库信息
-    @param msg: 信号，发送来的信息
-    """
+    def getData(self, msg) -> None:
+        """
+        获取信息
+        信息来自TestPage和HistoryPage页面，信息包括图片信息和数据库信息
+        Args:
+            msg: 信号，发送来的信息
 
-    def getData(self, msg):
+        Returns:
+            None
+        """
         # print(msg['info'])
         # self.writeFile(msg['data'])
 
@@ -179,54 +186,17 @@ class DataPage(Ui_Form, AbstractPage):
             #         item.setTextAlignment(Qt.AlignCenter)
             #         self.pix_table_model.setItem(i, j, item)
 
-    """
-    @detail 调整图片自适应label大小
-    @param img_right: opencv图片
-    """
+    def insertMysql(self, name_pic, cur_time) -> None:
+        """
+        需要修改
+        连接数据库，写入图片信息
+        Args:
+            name_pic: 保存图片的图片名
+            cur_time: 测试事件
 
-    def resizePhoto(self, img_right):
-        # 自适应label大小
-        width, height, channels = img_right.shape  ##获取图片宽度
-        long = width - height
-        image_copy = cv.copyMakeBorder(img_right, 0, 0, int(long / 2), int(long / 2), cv.BORDER_CONSTANT,
-                                       value=[0, 0, 0])
-
-        new_long = self.ui.rightLabel.width()
-        new_img_right = cv.resize(image_copy, (int(new_long), int(new_long)), interpolation=cv.INTER_AREA)
-
-        new_img_right = self.opencv2img(new_img_right)
-        new_img = self.img2pix(new_img_right)
-
-        return new_img
-
-    """
-    @detail 将opencv图片转换成QImage图片
-    @param img: opencv图片
-    """
-
-    def opencv2img(self, img):
-        height, width, depth = img.shape
-        cv_img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-        cv_img = QImage(cv_img.data, width, height, width * depth, QImage.Format_RGB888)
-        return cv_img
-
-    """
-    @detail 将QImage图片转换成QPixmap图片
-    @param img: QImage图片
-    """
-
-    def img2pix(self, img):
-        img_pix = QPixmap.fromImage(img)
-        return img_pix
-
-    """
-    @detail 连接数据库，写入图片信息
-    @detail 需要修改
-    @param name_pic: 保存图片的图片名
-    @param cur_time: 测试时间
-    """
-
-    def insertMysql(self, name_pic, cur_time):
+        Returns:
+            None
+        """
         reagent_matrix_info = str(self.readPixtable())
         point_str = self.data["point_str"]
         self.showDataView(point_str + reagent_matrix_info)
@@ -279,11 +249,12 @@ class DataPage(Ui_Form, AbstractPage):
         cursor.close()
         connection.close()
 
-    """
-    @detail 设置报告单页面
-    """
-
-    def setTableWidget(self):
+    def setTableWidget(self) -> None:
+        """
+        设置报告单页面
+        Returns:
+            None
+        """
         v = QVBoxLayout()
         text = MyReport().gethtml()
         self.myreport = QTextEdit()
@@ -296,11 +267,12 @@ class DataPage(Ui_Form, AbstractPage):
         v.addWidget(self.myreport)
         self.ui.tableWidget.setLayout(v)
 
-    """
-    @detail 读取表格内容，同时以list形式保存到数据库
-    """
-
-    def readPixtable(self):
+    def readPixtable(self) -> str:
+        """
+        读取表格内容，同时以str形式保存到数据库
+        Returns:
+            str
+        """
         reagent_matrix_info = ""
         for i in range(self.row_exetable + int(self.row_exetable / 2)):
             for j in range(self.column_exetable):
@@ -309,12 +281,15 @@ class DataPage(Ui_Form, AbstractPage):
                 reagent_matrix_info += "," + str(data)
         return reagent_matrix_info
 
-    """
-    @detail u盘提示信息
-    @param msg: U盘信息    
-    """
+    def getUSBInfo(self, msg) -> None:
+        """
+        U盘提示信息
+        Args:
+            msg: U盘信息
 
-    def getUSBInfo(self, msg):
+        Returns:
+            None
+        """
         if msg == 202:
             self.usbthread.deleteLater()
             m_title = ""
